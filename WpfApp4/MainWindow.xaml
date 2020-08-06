@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="公司核心数据" Height="450" Width="374" Background="Red" BorderBrush="White" >
+    <Grid x:Name="BG" Background="#FFD8D8D8">
+
+        <TextBox x:Name="Id" HorizontalAlignment="Left" Height="23" Margin="145,20,0,0" TextWrapping="Wrap" Text="000000" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="Add" Content="添加" HorizontalAlignment="Left" Margin="270,20,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click" Background="#FFA3FFB8" FontWeight="Bold" FontSize="14"/>
+        <Label Content="新增公司（按代码）" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ListBox x:Name="List" HorizontalAlignment="Left" Height="338" Margin="10,60,0,0" VerticalAlignment="Top" Width="255" FontSize="14" SelectionMode="Multiple"/>
+        <Button x:Name="Delete" Content="删除" HorizontalAlignment="Left" Margin="270,376,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click" FontSize="14" FontWeight="Bold" Background="#FFFF8B8B"/>
+        <Button x:Name="Search" Content="更新" HorizontalAlignment="Left" Margin="270,325,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Background="#FFF2FF9F" Click="Search_Click"/>
+        <Button x:Name="SP" Content="路径" HorizontalAlignment="Left" Margin="270,128,0,0" VerticalAlignment="Top" Width="75" Background="#FFADF0FF" FontWeight="Bold" FontSize="14" Click="SP_Click"/>
+        <Grid x:Name="CK" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="366" Background="#FFD6D6D6" Visibility="Collapsed">
+            <Button x:Name="Select" Content="选择路径..." HorizontalAlignment="Center" Margin="187,226,104,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Background="Black" Foreground="#FFF3FF00" Click="Select_Click"/>
+            <Label x:Name="Path_Label" Content="请选择路径" HorizontalAlignment="Center" Margin="10,193,10,0" VerticalAlignment="Top" Background="{x:Null}" Width="346" BorderBrush="Black" OpacityMask="White"/>
+            <Button x:Name="Yes" Content="确认" HorizontalAlignment="Left" Margin="280,226,0,0" VerticalAlignment="Top" Width="60" Background="Black" Foreground="#FFF3EC00" FontSize="14" FontWeight="Bold" Click="Yes_Click"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
